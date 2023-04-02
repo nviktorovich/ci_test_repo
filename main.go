@@ -22,5 +22,4 @@ func (n *NumList) Sum() int {
 		res += v
 	}
 	return res
-	sfsdfsdf
 }
