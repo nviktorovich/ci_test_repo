@@ -12,4 +12,5 @@ func GetSum(nums ...int) int {
 		res += num
 	}
 	return res
+	sfsdfsdf
 }
