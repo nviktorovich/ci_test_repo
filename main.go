@@ -4,7 +4,7 @@ import "fmt"
 
 func main() {
 	fmt.Println(GetSum(1, 2, 3, 5, 7))
-	wqrwerqwer
+	//wqrwerqwer
 }
 
 func GetSum(nums ...int) int {
