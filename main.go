@@ -3,13 +3,23 @@ package main
 import "fmt"
 
 func main() {
-	fmt.Println(GetSum(1, 2, 3, 5, 7))
+	a := NewNumList(1, 2, 3, 4, 5)
+	fmt.Println(a.Sum())
+
 }
 
-func GetSum(nums ...int) int {
-	var res int = 0
-	for _, num := range nums {
-		res += num
+type NumList struct {
+	args []int
+}
+
+func NewNumList(args ...int) *NumList {
+	return &NumList{args: args}
+}
+
+func (n *NumList) Sum() int {
+	res := 0
+	for _, v := range n.args {
+		res += v
 	}
 	return res
 }
